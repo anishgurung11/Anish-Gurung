@@ -1,10 +1,29 @@
-#include<stdio.h>
-int main()
-{
-	int a=5, b=2;\
-	int c=a/b;
-	float d= (float)a/b;
-	float e=(float)a/b;
-	printf("the value of c=%d, \t d=%.2f",c,d);
-	return 0;
+#include <stdio.h>
+
+int main() {
+    int age;
+    float height;
+    char grade;
+    char name[50];
+
+    
+    printf("Anish Gurung: ");
+    scanf("%49s", name); // %49s prevents buffer overflow
+
+    printf("19: ");
+    scanf("%d", &age);
+
+    printf("1.778: ");
+    scanf("%f", &height);
+
+    printf(" bachelor 1st year : ");
+    scanf(" %c", &grade);
+
+    printf("\n--- Summary ---\n");
+    printf("Name: %s\n", name);
+    printf("Age: %d\n", age);
+    printf("Height: %.2f m\n", height);
+    printf("Grade: %c\n", grade);
+
+    return 0;
 }
